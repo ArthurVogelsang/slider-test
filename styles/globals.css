@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+.react-multi-carousel-item .slide-description, .rec-carousel-item .slide-description {
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+.react-multi-carousel-item.react-multi-carousel-item--active .slide-description,
+.rec-carousel-item.rec-carousel-item-visible .slide-description {
+  opacity: 1;
+}
